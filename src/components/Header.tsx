@@ -1,12 +1,16 @@
 import { useState } from 'react'
 import './Header.css'
+import logo from '../assets/logo.svg'
 
 export default function Header() {
   const [open, setOpen] = useState(false)
 
   return (
     <header className="header">
-      <h1 className="header-title">myOura</h1>
+      <div className="brand">
+        <img src={logo} alt="Oura logo" className="logo" />
+        <h1 className="header-title">myOura</h1>
+      </div>
       <button
         className="menu-button"
         onClick={() => setOpen(!open)}
