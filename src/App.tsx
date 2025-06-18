@@ -8,12 +8,15 @@ export default function App() {
 
   const handleConnect = async () => {
     try {
-      const response = await fetch(
-        'https://api.ouraring.com/v2/usercollection/personal-info',
-        {
-          headers: { Authorization: `Bearer ${token}` },
+    const response = await fetch(
+      'https://api.ouraring.com/v2/usercollection/personal_info',
+      {
+        method: 'GET',
+        headers: {
+          Authorization: `Bearer ${token}`,
         },
-      )
+      },
+    )
       if (!response.ok) {
         throw new Error('Failed to fetch data')
       }
