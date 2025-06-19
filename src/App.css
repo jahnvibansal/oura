@@ -16,3 +16,25 @@
   padding: 0.5rem;
   margin-top: 1rem;
 }
+
+.link-button {
+  margin-top: 1rem;
+  background: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+.data-grid {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+  text-align: left;
+}
+
+.grid-item {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
